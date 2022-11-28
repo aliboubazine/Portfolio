@@ -1,79 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id="Home">
-        <nav id="NavBar">
-            <h1>Portfolio</h1>
-            <ul>
-                <li><a class="navbar" href="#Home">Home</a></li>
-                <li><a class="navbar" href="#About">About</a></li>
-                <li><a class="navbar" href="#Work">Work</a></li>
-                <li><a class="navbar" href="#Resume">Resume</a></li>
-                <li><a class="navbar" href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="About">
-        <br>
-        <h2>About</h2>
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt, soluta, obcaecati sequi hic voluptatum facilis eligendi fugit assumenda aperiam laboriosam distinctio dolore fugiat maiores quia aut! Autem, atque debitis?
-        <br>
-        <iframe width="900" height="506" src="https://www.youtube.com/embed/DF64yY3dZy0" title="Professional Graphic Design Portfolios EXPLAINED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <hr>
-    <section id="Work">
-        <h2>Work</h2>
-        <br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo magni quaerat, repudiandae, recusandae quas voluptatum sed veritatis ratione, sapiente voluptates accusantium consectetur vitae? Quo ad possimus fugiat aliquam, iure dolores!
-        <img src="Paysage.jpg" alt="Photo">
-    </section>
-    <hr>
-    <section id="Resume">
-        <h2>Resume</h2>
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione expedita suscipit praesentium veniam, deserunt saepe perspiciatis architecto pariatur blanditiis quas sequi nostrum et totam beatae ut fugiat dolorum dolor?
-        <audio src="114.mp3"></audio>
-    </section>
-    <hr>
-    <section id="Contact">
-        <h2>Contact</h2>
-        <form class="form" >
-            <div>
-            <label>Nom :</label>
-            <br>
-            <input type="text" class="InputText">
+	<header id="Home">
+		<div class="hero">
+			<nav>
+				<h2 class="logo">Portfo<span>lio</span></h2>
+				<ul>
+					<li><a href="#Home">Home</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Work">Work</a></li>
+					<li><a href="#skills">Resume</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="content">
+				<h4>Hello, my name is</h4>
+				<h1>BOUBAZINE <span>Ali</span></h1>
+				<h3>I'am a Web Developer.</h3>
+			</div>
+		</div>
+	</header>
+	<!----About section start---->
+	<section class="about" id="About">
+		<div class="main">
+			<img src="img/wallpaper.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+				<button type="button">Read More</button>
+			</div>
+		</div>
+	</section>
+	<!-----service section start----------->
+	<div class="service" id="Work">
+		<div class="title">
+			<h2>My Works</h2>
+		</div>
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Designer</h5>
+				<div class="pra">
+					<p>A designer is a person who plans the form or structure of something before it is made, by preparing drawings or plans.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>E Commerce</h5>
+				<div class="pra">
+					<p>E-commerce is the buying and selling of goods and services, or the transmitting of funds or data, over an electronic network, primarily the internet.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h1 class="titl">My skills</h1>
+			<h4 class="PostTitle"> What I know </h4>
+            <div class="skills-content" id="skills-content">
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div>
-            <label for="email">Email :</label>
-            <br>
-            <input type="email" class="InputEmail">
-            </div>
-            <br>
-            <div>
-            <label>comment :</label>
-            <br>
-            <textarea cols="30" rows="10" class="InputTextArea"></textarea>
-            </div>
-            <br>
-            <div>
-            <input type="submit" value="Submit" class="InputButton Submit">
-            <input type="button" value="Reset" class="InputButton Button">
-            <br>
-            </div>
-        </form>
+        </div>
     </section>
-    <hr>
-    <footer>
-        CopyRights   website   facebook   insta   email   
-    </footer>
+	<!------Contact Me------>
+	<div class="contact-me" id="Contact">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" href="index2.html">Hire Me</a>
+	</div>
+	<!------footer start--------->
+	<footer>
+		<p>BOUBAZINE Ali</p>
+		<p class="end">CopyRight By Me</p>
+	</footer>
 </body>
 </html>
